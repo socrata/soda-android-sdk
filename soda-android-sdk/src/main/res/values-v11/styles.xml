@@ -1,0 +1,23 @@
+<!--
+  ~ SODA Android SDK - Socrata, Inc
+  ~
+  ~ Copyright (C) 2013 Socrata, Inc
+  ~ All rights reserved.
+  ~
+  ~ Developed for Socrata, Inc by:
+  ~ 47 Degrees, LLC
+  ~ http://47deg.com
+  ~ hello@47deg.com
+  -->
+
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+</resources>

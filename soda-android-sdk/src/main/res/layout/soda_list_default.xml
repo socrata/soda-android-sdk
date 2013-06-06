@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ SODA Android SDK - Socrata, Inc
+  ~
+  ~ Copyright (C) 2013 Socrata, Inc
+  ~ All rights reserved.
+  ~
+  ~ Developed for Socrata, Inc by:
+  ~ 47 Degrees, LLC
+  ~ http://47deg.com
+  ~ hello@47deg.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <ProgressBar android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/progressbar"
+                 />
+
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@android:id/list"
+            />
+
+</LinearLayout>
+

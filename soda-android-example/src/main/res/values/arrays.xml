@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ SODA Android SDK - Socrata, Inc
+  ~
+  ~ Copyright (C) 2013 Socrata, Inc
+  ~ All rights reserved.
+  ~
+  ~ Developed for Socrata, Inc by:
+  ~ 47 Degrees, LLC
+  ~ http://47deg.com
+  ~ hello@47deg.com
+  -->
+
+<resources>
+
+    <array name="menu">
+        <item>ListView Example (Activity)</item>
+        <item>ListView Example (Fragment)</item>
+        <item>Map Example</item>
+    </array>
+
+</resources>
