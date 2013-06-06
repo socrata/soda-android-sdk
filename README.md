@@ -20,6 +20,27 @@ You can add the SODA Client to your project as a Gradle / Maven dependency or si
 - play-services-3.1.36.aar
 - support-v4-13.0.0
 
+### Build from sources
+
+The Android SDK uses the Android Build system based in Gradle.
+
+1. First you need to add *local.properties* providing your Android SDK location
+
+    sdk.dir=/path/to/android-sdk
+
+2. List available tasks
+
+    ./gradlew tasks
+
+3. Run integration and unit tests on a connected USB device or emulator
+
+    ./gradlew connectedCheck --info
+
+4. Install the provided sample app on a connected USB device or emulator. You need to get your own Maps API Key from Google to display GMaps [here](https://developers.google.com/maps/documentation/android/start#getting_the_google_maps_android_api_v2)
+
+    ./gradlew installDebug
+
+
 ## SODA
 
 ## Consumer
