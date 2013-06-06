@@ -39,11 +39,11 @@ public final class SOSQLTest extends TestCase {
     }
 
     public void testOrderBy() {
-        assertExpression("order a desc", orderBy(order("a", DESC)));
+        assertExpression("order by a desc", orderBy(order("a", DESC)));
     }
 
     public void testGroupBy() {
-        assertExpression("group a, b", groupBy("a", "b"));
+        assertExpression("group by a, b", groupBy("a", "b"));
     }
 
     public void testOffset() {
