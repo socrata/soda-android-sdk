@@ -4,8 +4,6 @@
 
 This is the Android SDK for the Socrata Open Data API (SODA). Please refer to the developer site (http://dev.socrata.com/) for a deeper discussion of the underlying protocol.
 
-Currently this SDK only contains support for the Consumer aspects of the SODA API but may be extended later to include the publisher capabilities as well.
-
 ## Distribution
 
 You can add the SODA Client to your project as a Gradle / Maven dependency or simply copying the client sources and adding the dependent libraries.
@@ -196,9 +194,9 @@ public class ListViewExampleActivity extends SodaListActivity<EarthquakeView, Ea
 
 ### SodaMapFragment
 
-The SodaMapFragment is simply a MapSupportFragment. The SodaMapFragment can be customized by overriding methods in its implementations
+The `SodaMapFragment` is simply a `MapSupportFragment`. The `SodaMapFragment` can be customized by overriding methods in its implementations
 
-1. Subclass the SodaMapFragment and customize as needed.
+1. Subclass the `SodaMapFragment` and customize as needed.
 2. Set the consumer property to indicate which Consumer object is used to query the data.
-3. Override the getQuery(Geobox) method to create a custom Query to fetch the data required. The geo box for the map will be passed to this method if you wish to filter the results based on the current map view.
-4. Override the toMarkerOptions(Object) method to provide a marker for the current fetched entity.
+3. Override the `getQuery(Geobox)` method to create a custom Query to fetch the data required. The geo box for the map will be passed to this method if you wish to filter the results based on the current map view.
+4. Override the `toMarkerOptions(Object)` method to provide a marker for the current fetched entity.
