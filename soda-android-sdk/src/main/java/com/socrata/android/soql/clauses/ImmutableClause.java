@@ -45,9 +45,11 @@ public abstract class ImmutableClause implements BuildCapable {
     @SuppressWarnings("unchecked")
     public <T extends ImmutableClause> T append(final BuildCapable... expressions) {
         try {
-            List<BuildCapable> appendedList = new ArrayList<BuildCapable>() {{
+            List<BuildCapable> appendedList = new ArrayList<BuildCapable>(
+                Arrays.asList(this.getExpressions())) {{
                 addAll(Arrays.asList(expressions));
             }};
+            
             T clause = (T) getClass().newInstance();
             clause.expressions = Collections.unmodifiableList(appendedList);
             return clause;
